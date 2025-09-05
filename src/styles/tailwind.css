@@ -58,6 +58,9 @@
 
 }
 
-@layer utilities{
-  
+@layer utilities {
+  /* 16:9 på ≥ lg (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .aspect-16-9-lg { aspect-ratio: 16 / 9; }
+  }
 }
