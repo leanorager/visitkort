@@ -1,0 +1,7 @@
+---
+const { stylingclasses = "" } = Astro.props;
+---
+
+<li class={`font-sans text-text text-lg ${stylingclasses}`}>
+  <slot />
+</li>

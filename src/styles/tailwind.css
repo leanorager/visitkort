@@ -5,36 +5,49 @@
 @import "tailwindcss-animated";
 @import "tailwindcss-intersect";
 
+/* Helvetica Neue lt STD 95 */
 @font-face {
-  font-family: 'Honk';
-  src: url('/fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
+  font-family: "helvetica_neue_lt_std95_black";
+  src:
+    url("/fonts/helvetica_neue_lt_std_95_black-webfont.woff2") format("woff2"),
+    url("/fonts/helvetica_neue_lt_std_95_black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* Helvetica Neue regular */
 @font-face {
-  font-family: 'Quicksand';
-  src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-family: "helvetica_neueregular";
+  src:
+    url("/fonts/helveticaneueroman-webfont.woff2") format("woff2"),
+    url("/fonts/helveticaneueroman-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* Helvetica Neue bold */
 @font-face {
-  font-family: 'Domine';
-  src: url('/fonts/Domine-Regular.ttf') format('truetype');
+  font-family: "helvetica_neuebold";
+  src:
+    url("/fonts/helveticaneuebold-webfont.woff2") format("woff2"),
+    url("/fonts/helveticaneuebold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
+
 
 @theme {
   /* Her tilføjes theme variable // tokens */
 
   /*Farver */
-  --color-primary-400: #00E4F5;
-  --color-primary-500: #006269;
-  --color-primary-600: #006D75;
-  --color-secondary-400: #F5E400;
-  --color-secondary-500: #F5A600;
-  --color-secondary-600: #F57A00;
+  --color-bg: #272727;
+  --color-text: #FBF6ED;
+
 
   /*Typografi */
-  --font-display: 'Honk', monospace;
-  --font-sans: 'Quicksand', sans-serif;
-  --font-serif: 'Domine', serif;
+  --font-heading: 'helvetica_neue_lt_std95_black', sans-serif;
+  --font-sans: 'helvetica_neueregular', sans-serif;
+  --font-bold: 'helvetica_neuebold', sans-serif;
 }
 
 @layer base {
